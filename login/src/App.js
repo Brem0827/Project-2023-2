@@ -1,25 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+const Login = () => {
+	
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="Login">
+      <h2 className="LoginTitle">로그인</h2>
+        <form className="form" id="registerFrm" name="register-page" > <br />
+          <input type="text" className="userId" name="userId"  placeholder="아이디" /> <br />
+          <input type="password" className="userPW" name="userPW" placeholder="비밀번호"/> <br />
+          <div style={{ textAlign: "center" }}>
+            <input type="button" className="LoginBtn" value="로그인" />
+            <input type="button" className="joinBtn" value="회원가입" />
+          </div>
+      </form>
     </div>
-  );
-}
+  )
+};
 
-export default App;
+export default Login;

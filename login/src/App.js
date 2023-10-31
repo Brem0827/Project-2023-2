@@ -1,4 +1,5 @@
 import './App.css';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
 	
@@ -10,7 +11,9 @@ const Login = () => {
           <input type="password" className="userPW" name="userPW" placeholder="비밀번호"/> <br />
           <div style={{ textAlign: "center" }}>
             <input type="button" className="LoginBtn" value="로그인" />
-            <input type="button" className="joinBtn" value="회원가입" />
+            <Link to = "./agreement">
+              <input type="button" className="joinBtn" value="회원가입" />
+            </Link><br />
           </div>
       </form>
     </div>

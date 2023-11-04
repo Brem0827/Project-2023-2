@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import '../css/SignUp.css'
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 function SignUp() {
   const [username, setUsername] = useState('');
@@ -55,27 +57,31 @@ function SignUp() {
   };
 
   return (
-    <div className="signup-container">
-      <form className="signup-form"  onSubmit={handleLoginAndSubmit}>
-        <div className="signup-form-group">
-            <h2 className="welcome">환영합니다!</h2>
-            <h6 className='signup-subtitle'>회원가입 페이지 입니다.</h6>
-            <label>
-                <input type="text" className='SignUptxt' id="username" name="username" value={username} placeholder="이름(필수)" onChange={(event) => setUsername(event.target.value)} />
-            </label><br/>
-            <label>
-                <input type="text" className='SignUptxt' id="useremail" name="useremail" value={useremail} placeholder="이메일(필수)" onChange={(event) => setUseremail(event.target.value)} />
-            </label><br/>
-            <label>
-                <input type="password" className='SignUptxt' id="password" name="password" value={password} placeholder="비밀번호(필수)" onChange={(event) => setPassword(event.target.value)}  />
-            </label><br/>
-            <label>
-                <input type="password" className='SignUptxt' id="password2" name="password2" value={password2} placeholder="비밀번호 재확인(필수)" onChange={(event) => setPassword2(event.target.value)} />
-            </label><br/>
-        </div>
-        <button type="submit" class="btn-signup">가입하기</button>
-      </form>
-      {error && <p>{error}</p>}
+    <div>
+      <Header />
+      <div className="signup-container">
+        <form className="signup-form"  onSubmit={handleLoginAndSubmit}>
+          <div className="signup-form-group">
+              <h2 className="welcome">환영합니다!</h2>
+              <h6 className='signup-subtitle'>회원가입 페이지 입니다.</h6>
+              <label>
+                  <input type="text" className='SignUptxt' id="username" name="username" value={username} placeholder="이름(필수)" onChange={(event) => setUsername(event.target.value)} />
+              </label><br/>
+              <label>
+                  <input type="text" className='SignUptxt' id="useremail" name="useremail" value={useremail} placeholder="이메일(필수)" onChange={(event) => setUseremail(event.target.value)} />
+              </label><br/>
+              <label>
+                  <input type="password" className='SignUptxt' id="password" name="password" value={password} placeholder="비밀번호(필수)" onChange={(event) => setPassword(event.target.value)}  />
+              </label><br/>
+              <label>
+                  <input type="password" className='SignUptxt' id="password2" name="password2" value={password2} placeholder="비밀번호 재확인(필수)" onChange={(event) => setPassword2(event.target.value)} />
+              </label><br/>
+          </div>
+          <button type="submit" class="btn-signup">가입하기</button>
+        </form>
+        {error && <p>{error}</p>}
+      </div>
+      <Footer />
     </div>
   );
 }

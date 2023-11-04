@@ -1,0 +1,26 @@
+.main-header{
+    background-color: #00A4DC;
+}
+
+.logo {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .nav-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .nav-item {
+    display: inline;
+    margin: 0 10px;
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .header {
+    position: relative;
+  }

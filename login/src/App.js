@@ -2,13 +2,16 @@ import React from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import './css/App.css';
+import ScrollHeader from './components/ScrollHeader';
+import Slide from './components/Slide';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <div>
-        
+      <ScrollHeader />
+      <div className='App-main'>
+        <Slide />
       </div>
       <Footer />
     </div>

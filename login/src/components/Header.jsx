@@ -25,7 +25,9 @@ const Header = () => {
                 <Link to = '../Community' style={{ textDecoration: 'none'}}>
                   <li className="nav-item">Community</li>
                 </Link>
-                <li className="nav-item">Support</li>
+                <Link to = '../Support' style={{ textDecoration: 'none'}}>
+                  <li className="nav-item">Support</li>
+                </Link>
               </ul>
             </nav>
           </div>

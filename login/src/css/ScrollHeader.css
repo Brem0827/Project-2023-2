@@ -1,0 +1,13 @@
+.scroll-header {
+    padding: 20px;
+    background-color: #f0f0f0;
+    transition: top 0.3s; /* 부드러운 상단 이동 애니메이션을 위한 transition 설정 */
+  }
+  
+  .scroll-header.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  

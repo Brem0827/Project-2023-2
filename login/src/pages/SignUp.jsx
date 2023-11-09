@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import '../css/SignUp.css'
+import ScrollHeader from '../components/ScrollHeader';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
@@ -59,6 +60,7 @@ function SignUp() {
   return (
     <div>
       <Header />
+      <ScrollHeader />
       <div className="signup-container">
         <form className="signup-form"  onSubmit={handleLoginAndSubmit}>
           <div className="signup-form-group">

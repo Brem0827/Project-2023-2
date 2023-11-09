@@ -1,8 +1,9 @@
 import React from 'react';
+import '../css/Faq.css';
 
 const Faq = () => {
   return (
-    <div>
+    <div className="faq-container">
       <h2>자주 묻는 질문</h2>
       <ul>
         <li>

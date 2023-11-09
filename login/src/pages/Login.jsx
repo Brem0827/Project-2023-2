@@ -1,5 +1,6 @@
 import Footer from '../components/Footer';
 import Header from '../components/Header';
+import ScrollHeader from '../components/ScrollHeader';
 import '../css/Login.css';
 import { Link } from 'react-router-dom';
 
@@ -8,6 +9,7 @@ const Login = () => {
   return (
     <div>
     <Header />
+    <ScrollHeader />
       <div className="Login">
         <h2 className="LoginTitle">로그인</h2>
           <form className="form" id="registerFrm" name="register-page" > <br />

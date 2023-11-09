@@ -25,6 +25,9 @@ const Header = () => {
                 <Link to = '../Community' style={{ textDecoration: 'none'}}>
                   <li className="nav-item">Community</li>
                 </Link>
+                <Link to = '../TodoList' style={{ textDecoration: 'none'}}>
+                    <li className="nav-item">TodoList</li>
+                </Link>
                 <Link to = '../Support' style={{ textDecoration: 'none'}}>
                   <li className="nav-item">Support</li>
                 </Link>

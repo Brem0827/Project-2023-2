@@ -6,19 +6,21 @@ import Faq from '../components/Faq';
 import HelpCenter from '../components/HelpCenter';
 import HomeHeader from '../components/HomeHeader';
 import ShortcutButtons from '../components/ShortcutButtons'; // 바로가기 버튼 추가
+import ScrollHeader from '../components/ScrollHeader';
 import '../css/Support.css';
 
 function Support() {
   return (
     <div className="Support">
       <Header />
+      <ScrollHeader />
       <main>
         <HomeHeader />
         <ContactForm />
         <Faq />
         <HelpCenter />
       </main>
-      <ShortcutButtons /> {/* 바로가기 버튼 추가 */}
+      <ShortcutButtons />
       <Footer />
     </div>
   );

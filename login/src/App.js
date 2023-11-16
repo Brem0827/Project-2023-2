@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import './css/App.css';
 import ScrollHeader from './components/ScrollHeader';
 import Slide from './components/Slide';
+import MainPage from './pages/MainPage';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <ScrollHeader />
       <div className='App-main'>
         <Slide />
+        <MainPage />
       </div>
       <Footer />
     </div>

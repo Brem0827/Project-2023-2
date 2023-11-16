@@ -6,11 +6,9 @@ const ScrollHeader = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      const scrollPosition = window.scrollY;
+
+      setIsScrolled(scrollPosition > 0);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -21,10 +19,10 @@ const ScrollHeader = () => {
   }, []);
 
   return (
-    <header className={isScrolled ? 'scroll-header fixed' : 'scroll-header'}>
+    <header className={`scroll-header ${isScrolled ? 'fixed' : ''}`}>
       전체 메뉴
     </header>
   );
-}
+};
 
 export default ScrollHeader;

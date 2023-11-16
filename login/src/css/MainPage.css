@@ -1,0 +1,107 @@
+.ad-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 30px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ad-content {
+    flex: 1;
+  }
+  
+  .ad-title {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .ad-description {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .ad-button {
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ad-button:hover {
+    background-color: #45a049;
+  }
+  
+  .ad-image {
+    flex: 0 0 200px;
+    margin-left: 30px;
+  }
+  
+  .ad-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .post-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-label {
+    display: block;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+
+  .form-title {
+    text-align: center;
+    color: #00A4DC;
+  }
+  
+  .form-input,
+  .form-textarea {
+    width: 50%; /* 변경된 부분: 너비를 50%로 설정 */
+    box-sizing: border-box; /* 변경된 부분: padding을 포함한 전체 너비로 설정 */
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease;
+    display: block; /* 변경된 부분: 가로로 나열되지 않도록 블록 레벨 요소로 변경 */
+    margin-left: auto; /* 변경된 부분: 좌우 중앙 정렬을 위해 왼쪽 여백을 자동으로 설정 */
+    margin-right: auto; /* 변경된 부분: 좌우 중앙 정렬을 위해 오른쪽 여백을 자동으로 설정 */
+  }
+  
+  .form-input:focus,
+  .form-textarea:focus {
+    border-color: #4caf50;
+    outline: none;
+  }
+  
+  .form-button {
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-button:hover {
+    background-color: #45a049;
+  }

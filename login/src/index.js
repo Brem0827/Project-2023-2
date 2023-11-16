@@ -11,6 +11,7 @@ import Login from './pages/Login';
 import Community from './pages/Community.jsx';
 import Support from './pages/Support.jsx';
 import TodoList from './pages/TodoList.jsx';
+import MainPage from './pages/MainPage';
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
@@ -25,6 +26,7 @@ root.render(
         <Route path="Community" element={<Community />} />
         <Route path="Support" element={<Support />} />
         <Route path="TodoList" element={<TodoList />} />
+        <Route path="MainPage" element={<MainPage />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

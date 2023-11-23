@@ -1,5 +1,7 @@
 import { useState } from "react";
 import '../css/agreement.css';
+import ScrollHeader from "../components/ScrollHeader";
+import Header from "../components/Header";
 import { Link } from "react-router-dom";
 
 export default function App() {
@@ -46,6 +48,9 @@ const handleAllAgreementChange = (event) => {
     setAllAgreed(checked);
 };
 return (
+    <div>
+        <Header />
+        <ScrollHeader />
     <div className="agreement">
         <label className="agreementTitle">회원 정보 입력 및 이용약관 동의</label>
         <ul>
@@ -222,6 +227,7 @@ return (
             <input type="button" className="AgreeBtn" value="동의" />
             </Link><br />
         </div>
+    </div>
 </div>
 );
 }

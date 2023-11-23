@@ -10,11 +10,11 @@
   }
 
 .Community-Title{
-    color:#007bff;
+    color:#00A4DC;
 }
 
 .Community-Post{
-    color:#007bff;
+    color:#00A4DC;
 }
   
   .post-list {
@@ -56,7 +56,7 @@
   
   .post-button {
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #00A4DC;
     color: #fff;
     border: none;
     border-radius: 5px;

@@ -1,7 +1,9 @@
 .scroll-header {
   background-color: #fff;
   padding: 15px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.3s ease;
+  position: relative;
+  z-index: 2; /* 적절한 z-index 값으로 조정해주세요. */
 }
 
 .scroll-header.fixed {
@@ -9,9 +11,5 @@
   top: 0;
   width: 100%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transform: translateY(-100%);
-}
-
-.scroll-header.fixed.show {
-  transform: translateY(0);
+  z-index: 1; /* .scroll-header보다 작은 z-index 값을 부여합니다. */
 }
